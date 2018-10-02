@@ -1,0 +1,50 @@
+body {
+  display: flex; /*container? item? */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  background-color: black;
+}
+
+h1 {
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+.inputSection {
+  margin: 50px 0px 20px 0px;
+  width: 400px;
+}
+
+.inputs {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.addButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.addOption {
+  margin-top: 10px;
+}
