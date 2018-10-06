@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
   background-color: #851e52;
 }
 
@@ -26,7 +26,6 @@ img {
   margin-right: auto;
   width: 65%;
 }
-
 
 button {
   background-color: orange;
