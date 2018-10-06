@@ -6,18 +6,18 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body class="backgroundColor">
-    <h1 class="headerSection">Help me choose between...</h1>
+    <h1 class="headerSection fade">Help me choose between...</h1>
     <div class="inputSection">
-      <img title="Batman Pug is sad" src="http://boydandersonauthor.com/gallery/576e1d50daf417f08b7a97ce081d2b0a.jpg" height="250" width="250">
+      <img class="grow circle" title="Batman Pug is sad" src="http://boydandersonauthor.com/gallery/576e1d50daf417f08b7a97ce081d2b0a.jpg" height="250" width="250">
       <div class="inputs">
-        <input class="placeholder" type="text" placeholder="Pugs, drugs, or cake">
+        <input class="placeholder color" type="text" placeholder="Pugs, drugs, or hugs">
       </div>
       <div class="addButtonContainer">
-        <button class="addOption">Add</button>
+        <button class="addOption color rotate">Add</button>
       </div>
     </div>
     <div class="resultSection"></div>
-      <button>Go!</button>
+      <button class="submit color grow">Go!</button>
     </div>
 
 
@@ -38,7 +38,37 @@
 
         $('.headerSection').click(changeBackground)
 
+        var options = []
 
+        var submit = function() {
+          $('.inputSection').hide()
+          $('.resultSection').css('display', 'flex')
+
+          var inputFunction = function() {
+              var value = $(this).val()
+              if (value !== "") {
+                options.push(value)
+              }
+          }
+
+          $('input').each(inputFunction)
+
+          var winner = options[Math.floor(Math.random() * options.length)]
+          console.log(winner)
+
+          if (options.length === 0) {
+            $('.headerSection').text("...there is no winner")
+
+          } else {
+
+            $('.resultSection').text(winner)
+            $('.headerSection').text("...and the winner is")
+
+          }
+        }
+
+
+        $('.submit').click(submit)
       })
 
 
