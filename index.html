@@ -5,8 +5,8 @@
     <title>Help me choose</title>
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
-    <h1>Help me choose between...</h1>
+  <body class="backgroundColor">
+    <h1 class="headerSection">Help me choose between...</h1>
     <div class="inputSection">
       <img title="Batman Pug is sad" src="http://boydandersonauthor.com/gallery/576e1d50daf417f08b7a97ce081d2b0a.jpg" height="250" width="250">
       <div class="inputs">
@@ -27,15 +27,20 @@
         $('.resultSection').hide()
 
         var addOption = function() {
-          $('.inputs').append('<input></input>')
+          $('.inputs').append('<input></input>') // append means "add"
         }
 
         $('.addOption').click(addOption)
+
+        var changeBackground = function() {
+          $('body').toggleClass('backgroundColor')
+        }
+
+        $('.headerSection').click(changeBackground)
+
+
       })
 
-      var title = function() {
-        $('.head')
-      }
 
     </script>
   </body>
