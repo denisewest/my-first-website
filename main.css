@@ -4,15 +4,15 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
-  background-color: black;
+  background-color: #851e52;
 }
 
 h1 {
   font-weight: lighter;
   font-family: sans-serif;
-  color: white;
+  color: #d3560e;
   font-size: 50px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   margin-bottom: 0;
 }
 
@@ -32,6 +32,22 @@ img {
   width: inherit;
   display: flex;
   flex-direction: column;
+}
+
+.placeholder {
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+  color: orange;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .addButtonContainer {

@@ -10,14 +10,33 @@
     <div class="inputSection">
       <img title="Batman Pug is sad" src="http://boydandersonauthor.com/gallery/576e1d50daf417f08b7a97ce081d2b0a.jpg" height="250" width="250">
       <div class="inputs">
-        <input placeholder="Pugs, drugs, or cake" style="text-align: center">
+        <input class="placeholder" type="text" placeholder="Pugs, drugs, or cake">
       </div>
       <div class="addButtonContainer">
         <button class="addOption">Add</button>
       </div>
     </div>
-    <div>
+    <div class="resultSection"></div>
       <button>Go!</button>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var addOption = function() {
+          $('.inputs').append('<input></input>')
+        }
+
+        $('.addOption').click(addOption)
+      })
+
+      var title = function() {
+        $('.head')
+      }
+
+    </script>
   </body>
 </html>
